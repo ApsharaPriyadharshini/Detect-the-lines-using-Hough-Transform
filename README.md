@@ -114,8 +114,6 @@ plt.show()
 
 ```python
 
-```
-```
 height, width = thresh.shape
 
 roi_vertices = np.array([[
