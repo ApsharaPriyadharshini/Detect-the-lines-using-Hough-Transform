@@ -45,7 +45,7 @@ import matplotlib.pyplot as plt
 ###  Step 2: Read the Image
 
 ```python
-# Read the image using OpenCV
+
 
 ###
 image = cv2.imread("lan_img1.jpg")
@@ -61,7 +61,6 @@ image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 ###  Step 3: Convert to Grayscale
 
 ```python
-# Convert to grayscale.
 
 ###
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -102,7 +101,7 @@ plt.show()
 ###  Step 5: Thresholding
 
 ```python
-# Apply thresholding
+
 
 threshold = 
 ###
@@ -123,9 +122,7 @@ plt.show()
 ###  Step 6: Region of Interest (ROI)
 
 ```python
-# ROI masking already provided
 
-# (Do not modify)
 ```
 ```
 height, width = thresh.shape
@@ -153,7 +150,6 @@ plt.show()
 ### Step 7: Edge Detection (Canny)
 
 ```python
-# Perform Edge Detection
 
 ###
 edges = cv2.Canny(roi_masked, 50, 150)
@@ -171,7 +167,6 @@ plt.show()
 ###  Step 8: Gaussian Blur
 
 ```python
-# Apply Gaussian Blur
 
 ###
 smoothed = cv2.GaussianBlur(edges, (5, 5), 0)
@@ -189,7 +184,7 @@ plt.show()
 ###  Step 9: Hough Transform
 
 ```python
-# Detect lines using Hough Transform
+
 
 ###
 lines = cv2.HoughLinesP(
@@ -223,8 +218,6 @@ plt.show()
 ### Step 10: Lane Detection Logic
 
 ```python```
-# Already implemented
-# (Do not modify)
 ```
 final_output = cv2.addWeighted(image, 0.8, line_image, 1.0, 0.0)
 final_output_rgb = cv2.cvtColor(final_output, cv2.COLOR_BGR2RGB)
@@ -239,27 +232,6 @@ plt.show()
 
 ---
 
-##  Expected Output
-
-* Original image
-* Grayscale image
-* Thresholded image
-* ROI masked image
-* Edge detected image
-* Smoothed image
-* Detected lines
-* Final lane detection output
-
----
-
-##  Instructions
-
-* Fill ONLY in `# Your Code Here` sections
-* Do NOT change existing code
-* Run step-by-step
-* Verify outputs
-
----
 
 ## Result
 
