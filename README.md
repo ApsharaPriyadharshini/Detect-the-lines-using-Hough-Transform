@@ -203,7 +203,6 @@ plt.show()
 
 ### Step 10: Lane Detection Logic
 
-```python```
 ```
 final_output = cv2.addWeighted(image, 0.8, line_image, 1.0, 0.0)
 final_output_rgb = cv2.cvtColor(final_output, cv2.COLOR_BGR2RGB)
